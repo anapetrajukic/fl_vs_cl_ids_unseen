@@ -1,0 +1,189 @@
+{
+  "seed": 49,
+  "aggregation_method": "scaffold",
+  "seen_datasets": [
+    "NF-CICIDS2018-v3",
+    "NF-ToN-IoT-v3"
+  ],
+  "unseen_dataset": "NF-BoT-IoT-v3",
+  "best_params": {
+    "n_layers": 1,
+    "first_layer": 612,
+    "latent_dim": 61,
+    "dropout": 0.037171365699601576,
+    "activation": "gelu",
+    "weight_decay": 1e-05,
+    "grad_clip": null,
+    "lr": 0.008675741076875259,
+    "sgd_momentum": 0.0363007201439498,
+    "sgd_nesterov": true,
+    "beta": 0.7619618991511437,
+    "beta_warmup_rounds": 3,
+    "batch_size": 128,
+    "local_epochs": 2,
+    "recon_type": "mse",
+    "score_type": "recon",
+    "clip_abs": 6.0,
+    "optimizer": "sgd",
+    "clip_min": -6.0,
+    "clip_max": 6.0,
+    "rounds": 120,
+    "early_stop_patience": 5
+  },
+  "per_seen": {
+    "NF-CICIDS2018-v3": {
+      "val_auroc": 0.8222006299852664,
+      "test_auroc": 0.823171941946519
+    },
+    "NF-ToN-IoT-v3": {
+      "val_auroc": 0.8191958279470344,
+      "test_auroc": 0.8300346416629503
+    }
+  },
+  "seen_val_mean": 0.8206982289661504,
+  "seen_test_mean": 0.8266032918047346,
+  "unseen__val_auroc": 0.539510912311997,
+  "unseen__test_auroc": 0.5364225944178187,
+  "history": [
+    {
+      "round": 1,
+      "val_aurocs": [
+        0.6497394583782584,
+        0.7921807171445184
+      ],
+      "val_mean": 0.7209600877613884
+    },
+    {
+      "round": 2,
+      "val_aurocs": [
+        0.7791920928193345,
+        0.7861908706704979
+      ],
+      "val_mean": 0.7826914817449162
+    },
+    {
+      "round": 3,
+      "val_aurocs": [
+        0.7448513804919079,
+        0.7866957479757866
+      ],
+      "val_mean": 0.7657735642338472
+    },
+    {
+      "round": 4,
+      "val_aurocs": [
+        0.7677363291503667,
+        0.8050649084282169
+      ],
+      "val_mean": 0.7864006187892918
+    },
+    {
+      "round": 5,
+      "val_aurocs": [
+        0.8021015620736827,
+        0.8107759139772807
+      ],
+      "val_mean": 0.8064387380254816
+    },
+    {
+      "round": 6,
+      "val_aurocs": [
+        0.8168639604396348,
+        0.8184629149802141
+      ],
+      "val_mean": 0.8176634377099244
+    },
+    {
+      "round": 7,
+      "val_aurocs": [
+        0.8188740612786742,
+        0.817464568032952
+      ],
+      "val_mean": 0.8181693146558131
+    },
+    {
+      "round": 8,
+      "val_aurocs": [
+        0.8209443757632551,
+        0.8217270943529009
+      ],
+      "val_mean": 0.821335735058078
+    },
+    {
+      "round": 9,
+      "val_aurocs": [
+        0.8222736625514404,
+        0.8242888203958669
+      ],
+      "val_mean": 0.8232812414736537
+    },
+    {
+      "round": 10,
+      "val_aurocs": [
+        0.8179594489322428,
+        0.8256591512510325
+      ],
+      "val_mean": 0.8218093000916377
+    },
+    {
+      "round": 11,
+      "val_aurocs": [
+        0.8224299592993389,
+        0.8259426963670473
+      ],
+      "val_mean": 0.8241863278331931
+    },
+    {
+      "round": 12,
+      "val_aurocs": [
+        0.8156371074117352,
+        0.8207644404552904
+      ],
+      "val_mean": 0.8182007739335129
+    },
+    {
+      "round": 13,
+      "val_aurocs": [
+        0.8154361208487867,
+        0.8228645089483122
+      ],
+      "val_mean": 0.8191503148985495
+    },
+    {
+      "round": 14,
+      "val_aurocs": [
+        0.8123125379863427,
+        0.8174959685082633
+      ],
+      "val_mean": 0.814904253247303
+    },
+    {
+      "round": 15,
+      "val_aurocs": [
+        0.810340188280543,
+        0.8174110578596683
+      ],
+      "val_mean": 0.8138756230701056
+    },
+    {
+      "round": 16,
+      "val_aurocs": [
+        0.8141287085490205,
+        0.8169117079788725
+      ],
+      "val_mean": 0.8155202082639466
+    }
+  ],
+  "no_leakage": {
+    "objective": "single-objective: seen VAL aggregate",
+    "scaler_fit": "seen TRAIN benign only",
+    "unseen_usage": {
+      "unseen_val": "not optimized; reported only",
+      "unseen_test": "held-out test only (reported, not optimized)"
+    }
+  },
+  "unseen_split": {
+    "unseen_val_n": 5832,
+    "unseen_test_n": 7290
+  }
+}

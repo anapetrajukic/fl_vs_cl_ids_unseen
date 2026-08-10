@@ -1,0 +1,29 @@
+{
+  "n_layers": 2,
+  "first_layer": 284,
+  "layer_1_dropoff": 0.557733365005864,
+  "latent_dim": 21,
+  "dropout": 0.3864340869749871,
+  "activation": "leakyrelu",
+  "weight_decay": 1e-10,
+  "grad_clip": 5.0,
+  "lr": 0.017029799427930866,
+  "sgd_momentum": 0.5964265299143731,
+  "sgd_nesterov": true,
+  "beta": 0.1913135706422213,
+  "beta_warmup_rounds": 11,
+  "batch_size": 128,
+  "local_epochs": 8,
+  "recon_type": "mse",
+  "score_type": "recon",
+  "clip_abs": 5.0,
+  "clip_min": -5.0,
+  "clip_max": 5.0,
+  "early_stop_patience": 8,
+  "rounds": 120,
+  "optimizer": "sgd",
+  "hidden_dims": [
+    284,
+    158
+  ]
+}

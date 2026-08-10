@@ -1,0 +1,197 @@
+{
+  "seed": 47,
+  "aggregation_method": "scaffold",
+  "seen_datasets": [
+    "NF-BoT-IoT-v3",
+    "NF-CICIDS2018-v3"
+  ],
+  "unseen_dataset": "NF-ToN-IoT-v3",
+  "best_params": {
+    "n_layers": 1,
+    "first_layer": 886,
+    "latent_dim": 36,
+    "dropout": 0.3455043170126701,
+    "activation": "gelu",
+    "weight_decay": 1e-06,
+    "grad_clip": null,
+    "lr": 0.002294899014985685,
+    "sgd_momentum": 0.4272437581331232,
+    "sgd_nesterov": false,
+    "beta": 0.1183509643557422,
+    "beta_warmup_rounds": 11,
+    "batch_size": 512,
+    "local_epochs": 6,
+    "recon_type": "mse",
+    "score_type": "recon",
+    "clip_abs": 6.0,
+    "optimizer": "sgd",
+    "clip_min": -6.0,
+    "clip_max": 6.0,
+    "rounds": 120,
+    "early_stop_patience": 2
+  },
+  "per_seen": {
+    "NF-BoT-IoT-v3": {
+      "val_auroc": 0.903834456694158,
+      "test_auroc": 0.9047179272957864
+    },
+    "NF-CICIDS2018-v3": {
+      "val_auroc": 0.8386782940157046,
+      "test_auroc": 0.8425819234872732
+    }
+  },
+  "seen_val_mean": 0.8712563753549313,
+  "seen_test_mean": 0.8736499253915297,
+  "unseen__val_auroc": 0.726399543881635,
+  "unseen__test_auroc": 0.7344347161773367,
+  "history": [
+    {
+      "round": 1,
+      "val_aurocs": [
+        0.5805142292371119,
+        0.7200440053552511
+      ],
+      "val_mean": 0.6502791172961815
+    },
+    {
+      "round": 2,
+      "val_aurocs": [
+        0.7743014981907681,
+        0.7843118991571971
+      ],
+      "val_mean": 0.7793066986739826
+    },
+    {
+      "round": 3,
+      "val_aurocs": [
+        0.7894348808240237,
+        0.8192567472212343
+      ],
+      "val_mean": 0.804345814022629
+    },
+    {
+      "round": 4,
+      "val_aurocs": [
+        0.825853787156053,
+        0.8492179752785352
+      ],
+      "val_mean": 0.837535881217294
+    },
+    {
+      "round": 5,
+      "val_aurocs": [
+        0.8474684866241031,
+        0.8553298367081201
+      ],
+      "val_mean": 0.8513991616661116
+    },
+    {
+      "round": 6,
+      "val_aurocs": [
+        0.8520987042776149,
+        0.8575471571632599
+      ],
+      "val_mean": 0.8548229307204374
+    },
+    {
+      "round": 7,
+      "val_aurocs": [
+        0.855961197950478,
+        0.8576441223014407
+      ],
+      "val_mean": 0.8568026601259593
+    },
+    {
+      "round": 8,
+      "val_aurocs": [
+        0.8634222801778559,
+        0.8580378630929868
+      ],
+      "val_mean": 0.8607300716354214
+    },
+    {
+      "round": 9,
+      "val_aurocs": [
+        0.871199013625219,
+        0.8562926082105069
+      ],
+      "val_mean": 0.863745810917863
+    },
+    {
+      "round": 10,
+      "val_aurocs": [
+        0.8782423636866558,
+        0.8527567030018384
+      ],
+      "val_mean": 0.865499533344247
+    },
+    {
+      "round": 11,
+      "val_aurocs": [
+        0.8866400503536611,
+        0.8492501401848934
+      ],
+      "val_mean": 0.8679450952692773
+    },
+    {
+      "round": 12,
+      "val_aurocs": [
+        0.8897732768077737,
+        0.8499659416567409
+      ],
+      "val_mean": 0.8698696092322573
+    },
+    {
+      "round": 13,
+      "val_aurocs": [
+        0.8955781309684425,
+        0.8436239864820366
+      ],
+      "val_mean": 0.8696010587252396
+    },
+    {
+      "round": 14,
+      "val_aurocs": [
+        0.9013128926823486,
+        0.8422021447347872
+      ],
+      "val_mean": 0.8717575187085679
+    },
+    {
+      "round": 15,
+      "val_aurocs": [
+        0.9046356980360943,
+        0.839621778334754
+      ],
+      "val_mean": 0.8721287381854241
+    },
+    {
+      "round": 16,
+      "val_aurocs": [
+        0.9051167015717643,
+        0.8358575434526129
+      ],
+      "val_mean": 0.8704871225121886
+    },
+    {
+      "round": 17,
+      "val_aurocs": [
+        0.9083034381991604,
+        0.8317039191556541
+      ],
+      "val_mean": 0.8700036786774072
+    }
+  ],
+  "no_leakage": {
+    "objective": "single-objective: seen VAL aggregate",
+    "scaler_fit": "seen TRAIN benign only",
+    "unseen_usage": {
+      "unseen_val": "not optimized; reported only",
+      "unseen_test": "held-out test only (reported, not optimized)"
+    }
+  },
+  "unseen_split": {
+    "unseen_val_n": 5832,
+    "unseen_test_n": 7290
+  }
+}

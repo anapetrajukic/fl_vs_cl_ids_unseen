@@ -1,0 +1,234 @@
+{
+  "seed": 51,
+  "seen_datasets": [
+    "NF-BoT-IoT-v3",
+    "NF-ToN-IoT-v3"
+  ],
+  "unseen_dataset": "NF-CICIDS2018-v3",
+  "best_params": {
+    "n_layers": 4,
+    "first_layer": 506,
+    "layer_1_dropoff": 0.5691362160605736,
+    "layer_2_dropoff": 0.8143851738374538,
+    "layer_3_dropoff": 0.8029534518495324,
+    "latent_dim": 56,
+    "dropout": 0.058368768510686175,
+    "activation": "elu",
+    "weight_decay": 1e-06,
+    "grad_clip": 5.0,
+    "lr": 0.010503290932017958,
+    "sgd_momentum": 0.882934154421437,
+    "sgd_nesterov": false,
+    "beta": 0.371900125108943,
+    "beta_warmup_rounds": 3,
+    "batch_size": 64,
+    "local_epochs": 8,
+    "recon_type": "mse",
+    "score_type": "recon",
+    "clip_abs": 8.0,
+    "clip_min": -8.0,
+    "clip_max": 8.0,
+    "early_stop_patience": 8,
+    "rounds": 120,
+    "optimizer": "sgd",
+    "hidden_dims": [
+      506,
+      287,
+      233,
+      187
+    ]
+  },
+  "seen_val_mean": 0.9252035679877917,
+  "seen_test_mean": 0.9294387147397359,
+  "unseen__val_auroc": 0.5817337319664836,
+  "unseen__test_auroc": 0.5755913450411241,
+  "metrics": {
+    "NF-BoT-IoT-v3__val_auroc": 0.9755778393085968,
+    "NF-ToN-IoT-v3__val_auroc": 0.8748292966669866,
+    "NF-BoT-IoT-v3__test_auroc": 0.9767372107157709,
+    "NF-ToN-IoT-v3__test_auroc": 0.882140218763701,
+    "unseen__val_auroc": 0.5817337319664836,
+    "unseen__test_auroc": 0.5755913450411241
+  },
+  "history": [
+    {
+      "round": 1,
+      "val_auroc": 0.8965512810923508,
+      "train__train_loss": 0.2987727224826813,
+      "train__train_loss_epoch_mean": 0.905865803697746,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 2,
+      "val_auroc": 0.9142903445537698,
+      "train__train_loss": 0.18237105011940002,
+      "train__train_loss_epoch_mean": 0.33430753787596745,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 3,
+      "val_auroc": 0.9157996842546963,
+      "train__train_loss": 0.22113674879074097,
+      "train__train_loss_epoch_mean": 0.2638162500850142,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 4,
+      "val_auroc": 0.9188665816148923,
+      "train__train_loss": 0.30245542526245117,
+      "train__train_loss_epoch_mean": 0.23536751102911282,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 5,
+      "val_auroc": 0.9177029999567213,
+      "train__train_loss": 0.22993764281272888,
+      "train__train_loss_epoch_mean": 0.21644560554868555,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 6,
+      "val_auroc": 0.9184920986054896,
+      "train__train_loss": 0.17438572645187378,
+      "train__train_loss_epoch_mean": 0.20355440863497454,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 7,
+      "val_auroc": 0.9240029114238457,
+      "train__train_loss": 0.14955785870552063,
+      "train__train_loss_epoch_mean": 0.19413377035868495,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 8,
+      "val_auroc": 0.924391183593287,
+      "train__train_loss": 0.22583864629268646,
+      "train__train_loss_epoch_mean": 0.1869143217036577,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 9,
+      "val_auroc": 0.9239431681974105,
+      "train__train_loss": 0.2071508765220642,
+      "train__train_loss_epoch_mean": 0.18046358130770185,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 10,
+      "val_auroc": 0.9248563692865248,
+      "train__train_loss": 0.18817411363124847,
+      "train__train_loss_epoch_mean": 0.17553163315743617,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 11,
+      "val_auroc": 0.9249545692748584,
+      "train__train_loss": 0.23342901468276978,
+      "train__train_loss_epoch_mean": 0.17176285795357127,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 12,
+      "val_auroc": 0.9245366607017524,
+      "train__train_loss": 0.12427523732185364,
+      "train__train_loss_epoch_mean": 0.16789776528738948,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 13,
+      "val_auroc": 0.9243863029950644,
+      "train__train_loss": 0.14703243970870972,
+      "train__train_loss_epoch_mean": 0.1643892697785815,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 14,
+      "val_auroc": 0.9222844116280076,
+      "train__train_loss": 0.13596463203430176,
+      "train__train_loss_epoch_mean": 0.1610613986441534,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 15,
+      "val_auroc": 0.9273308913877552,
+      "train__train_loss": 0.13028401136398315,
+      "train__train_loss_epoch_mean": 0.15892841658771856,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 16,
+      "val_auroc": 0.9196466540970683,
+      "train__train_loss": 0.12044186145067215,
+      "train__train_loss_epoch_mean": 0.15673281465440173,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 17,
+      "val_auroc": 0.921918601970868,
+      "train__train_loss": 0.13352778553962708,
+      "train__train_loss_epoch_mean": 0.154162645995719,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 18,
+      "val_auroc": 0.9238531417410398,
+      "train__train_loss": 0.13942964375019073,
+      "train__train_loss_epoch_mean": 0.1529922237109444,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 19,
+      "val_auroc": 0.9271601292523535,
+      "train__train_loss": 0.1025228351354599,
+      "train__train_loss_epoch_mean": 0.15094343818826217,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 20,
+      "val_auroc": 0.9271002096187535,
+      "train__train_loss": 0.1574755311012268,
+      "train__train_loss_epoch_mean": 0.14888774348958717,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 21,
+      "val_auroc": 0.9223647944927095,
+      "train__train_loss": 0.14913630485534668,
+      "train__train_loss_epoch_mean": 0.1476834216627152,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 22,
+      "val_auroc": 0.9217391370820092,
+      "train__train_loss": 0.1781824231147766,
+      "train__train_loss_epoch_mean": 0.146726091772522,
+      "train__beta_now": 0.371900125108943
+    },
+    {
+      "round": 23,
+      "val_auroc": 0.9270696911792654,
+      "train__train_loss": 0.13933181762695312,
+      "train__train_loss_epoch_mean": 0.14535209204338184,
+      "train__beta_now": 0.371900125108943
+    }
+  ],
+  "best_metric": 0.9273308913877552,
+  "no_leakage": {
+    "objective": "single-objective: seen VAL aggregate",
+    "scaler_fit": "pooled seen TRAIN benign only",
+    "unseen_usage": {
+      "unseen_val": "not optimized; logged only during HPO / reported here",
+      "unseen_test": "held-out test only (reported, not optimized)"
+    }
+  },
+  "compute_match": {
+    "epochs_matched": 963,
+    "rounds": 120,
+    "local_epochs": 8
+  },
+  "unseen_split": {
+    "unseen_val_n": 5832,
+    "unseen_test_n": 7290
+  }
+}

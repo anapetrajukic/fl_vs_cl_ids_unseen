@@ -1,0 +1,31 @@
+{
+  "n_layers": 3,
+  "first_layer": 988,
+  "layer_1_dropoff": 0.5510554594873387,
+  "layer_2_dropoff": 0.7233255232044246,
+  "latent_dim": 31,
+  "dropout": 0.0009540962083770255,
+  "activation": "gelu",
+  "weight_decay": 1e-10,
+  "grad_clip": 2.0,
+  "lr": 0.014725031375127614,
+  "sgd_momentum": 0.8227210991450495,
+  "sgd_nesterov": true,
+  "beta": 0.24346623567382966,
+  "beta_warmup_rounds": 2,
+  "batch_size": 128,
+  "local_epochs": 4,
+  "recon_type": "mse",
+  "score_type": "recon",
+  "clip_abs": 8.0,
+  "clip_min": -8.0,
+  "clip_max": 8.0,
+  "early_stop_patience": 8,
+  "rounds": 120,
+  "optimizer": "sgd",
+  "hidden_dims": [
+    988,
+    544,
+    393
+  ]
+}

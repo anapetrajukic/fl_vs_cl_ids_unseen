@@ -1,0 +1,61 @@
+{
+  "trial_number": 71,
+  "value": 0.9618597419563037,
+  "user_attrs": {
+    "NF-BoT-IoT-v3__test_auroc": 0.9697211920043806,
+    "NF-BoT-IoT-v3__val_auroc": 0.9697178285077742,
+    "NF-CICIDS2018-v3__test_auroc": 0.9493441887246186,
+    "NF-CICIDS2018-v3__val_auroc": 0.9540016554048333,
+    "activation": "gelu",
+    "batch_size": 128,
+    "beta": 0.24346623567382966,
+    "beta_warmup_rounds": 2,
+    "clip_abs": 8.0,
+    "clip_max": 8.0,
+    "clip_min": -8.0,
+    "dropout": 0.0009540962083770255,
+    "early_stop_patience": 8,
+    "epochs_matched": 483,
+    "epochs_per_round": 4,
+    "first_layer": 988,
+    "grad_clip": 2.0,
+    "hidden_dims": [
+      988,
+      544,
+      393
+    ],
+    "hpo_seeds": [
+      42,
+      43,
+      44,
+      45
+    ],
+    "latent_dim": 31,
+    "layer_1_dropoff": 0.5506072874493927,
+    "layer_2_dropoff": 0.7224264705882353,
+    "local_epochs": 4,
+    "lr": 0.014725031375127614,
+    "max_rounds": 120,
+    "n_layers": 3,
+    "optimizer": "sgd",
+    "recon_type": "mse",
+    "rounds": 120,
+    "score_type": "recon",
+    "seed_seen_obj_mean": 0.9618597419563037,
+    "seed_seen_obj_std": 0.0016236994612184676,
+    "seen_test_mean": 0.9595326903644996,
+    "seen_test_min": 0.9493441887246186,
+    "sgd_momentum": 0.8227210991450495,
+    "sgd_nesterov": true,
+    "train__best_metric": 0.9619642338001773,
+    "train__history_len": 56.25,
+    "unseen__test_auroc": 0.7527564395671391,
+    "unseen__val_auroc": 0.7357280723542219,
+    "unseen_test_n": 7290,
+    "unseen_val_n": 5832,
+    "weight_decay": 1e-10
+  },
+  "selection_rule": {
+    "objective": "maximize seen validation objective"
+  }
+}
